@@ -14,7 +14,7 @@ const applyPostcodes = () => {
         for (code in postCodesArray) {
             let searchURL = postCodeURL + postCodesArray[code];
             $.ajax({async: false, url: searchURL, success: function (returns){
-                let ward = returns.result.admin_ward;
+                let ward = returns.result.parliamentary_constituency;
     
                 tableContents += "<tr><td>" + postCodesArray[code] + "</td><td>" + ward + "</td></tr>";
             }
