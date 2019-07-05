@@ -12,7 +12,34 @@
     <title>Postcode Checker</title>
 </head>
 <body>
-    <h1 class="header">Match Postcodes to Council Wards</h1>
+        <h1 class="header">Match Postcodes to Council Wards</h1>
+    <div class="header flex-along">
+        <div>
+            
+            <h3>Step One</h3>
+            <p>Select what you want to find from the drop down bar</p>
+            
+            <select id="selectForm">
+                <option value="">--Please choose an option--</option>
+                <option value="admin_district">District or Borough</option>
+                <option value="admin_county">Administrative County</option>
+                <option value="parliamentary_constituency">Parliamentary Constituency</option>
+                <option value="admin_ward">Council Ward</option>
+                <option value="ced">County Electoral Division</option>
+            </select>
+        </div>
+        
+        <div>
+            <h3>Step Two</h3>
+            <p>Paste your Postcodes into the box</p>
+        </div>
+        <div>
+            <h3>Step Three</h3>
+            <p>Click 'Find the Postcodes'</p>
+        </div>
+
+    </div>
+
     <div class="grid">
         <div class="flexCentre input fullsize">
             <textarea name="input" id="input" class="textInput" value=""></textarea>
@@ -25,7 +52,7 @@
                 Start Again
             </button>
         </div >
-            <table class="tableDiv" id="table"><thead><tr><th>Postcode</th><th>Constituency</th></tr></thead>
+            <table class="tableDiv" id="table"><thead><tr><th>Postcode</th><th>Result</th></tr></thead>
                 <tbody id="tableBody">
 
                 </tbody>

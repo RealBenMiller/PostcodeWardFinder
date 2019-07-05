@@ -5,6 +5,10 @@ body {
 
 }
 
+.header {
+    margin-left: 10px;
+}
+
 /**GRID**/
 
 .flex {
@@ -14,10 +18,21 @@ body {
     flex-flow: column;
 }
 
+.flex-along {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
 .flexCentre {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center; 
+}
+
+select {
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .grid {
@@ -27,7 +42,7 @@ body {
 }
 
 .fullsize {
-    height: 90vh;
+    height: 50vh;
     border-radius: 5px;
 }
 
