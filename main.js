@@ -20,11 +20,17 @@ const applyPostcodes = () => {
                 
                 let adminResult = document.getElementById("selectForm").value;
                 results = returns.result;
-                formResult = results[adminResult];
 
+                formResult = results[adminResult];
                 tableContents += "<tr><td>" + postCodesArray[code] + "</td><td>" + formResult + "</td></tr>";
+
+
+            }, error: function (error) {
+                formResult = "No Data Found";
+                tableContents += "<tr><td>" + postCodesArray[code] + "</td><td>" + formResult + "</td></tr>";
+
             }
-        });
+        })
     };
 
     
